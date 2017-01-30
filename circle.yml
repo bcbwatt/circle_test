@@ -1,6 +1,3 @@
-dependencies:
-   - echo "nope"
-
 compile:
   override:
     - echo "nope"
