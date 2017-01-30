@@ -1,0 +1,21 @@
+dependencies:
+    - echo "nope"
+
+compile:
+  override:
+    - echo "nope"
+
+test:
+  override:
+    - echo "nope"
+
+deployment:
+  staging:
+    branch: master
+    commands: 
+      - echo "$CI_PULL_REQUEST"
+  dev:
+    branch: /.*?/
+    commands:
+      - echo "$CI_PULL_REQUEST"
+       
