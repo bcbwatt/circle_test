@@ -1,6 +1,9 @@
+machine:
+  environment:
+    ARTEFACT: $(git describe --always)
 compile:
   override:
-    - echo "nope"
+    - echo "$ARTEFACT"
 
 test:
   override:
