@@ -1,6 +1,9 @@
+machine:
+  environment:
+    ARTEFACT: $SHORT_COMMIT
 compile:
   override:
-    - echo "nope"
+    - echo "$ARTEFACT"
 
 test:
   override:
