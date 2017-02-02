@@ -1,6 +1,6 @@
 machine:
   environment:
-    ARTEFACT: $(git describe --always)
+    ARTEFACT: $SHORT_COMMIT
 compile:
   override:
     - echo "$ARTEFACT"
